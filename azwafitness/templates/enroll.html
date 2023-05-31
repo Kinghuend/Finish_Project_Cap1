@@ -6,7 +6,7 @@ Enrollment for Gym
 
 {% block head %}
 
-<h1>Join The Best Gym In DANANG</h1>
+<h1>Tham Gia Phòng Tập Gym Tại ĐÀ NẴNG</h1>
 
 <div class="container mt-2">
     <div class="row">   
@@ -36,7 +36,7 @@ Enrollment for Gym
           type="text"
           class="form-control"
           name="FullName"
-          placeholder="Enter Your Full Name"
+          placeholder="Nhập tên đầy đủ của bạn"
           required
         />
       </div>
@@ -57,9 +57,9 @@ Enrollment for Gym
         <div class="form-group">
 
           <select class="form-control mt-2" id="gender" name="gender" required>
-            <option selected>Select Gender</option>
-            <option value="Male">Male</option>
-            <option value="Female">Female</option>
+            <option selected>Chọn giới tính</option>
+            <option value="Male">Nam</option>
+            <option value="Female">Nữ</option>
           </select>
         </div>
         
@@ -88,7 +88,7 @@ Enrollment for Gym
         <div class="form-group">
            
           <select  class="form-control mt-2" id="member" name="member"  required>
-          <option selected>Select Membership Plan</option>
+          <option selected>Chọn gói thành viên</option>
                {% for  p in Membership %}
                
 
@@ -105,14 +105,14 @@ Enrollment for Gym
                 type="text"
                 class="form-control mt-2"
                 name="address"
-                placeholder="Address"
+                placeholder="Địa chỉ"
     
             />
         </div>
                   
         <br>
         <div class="d-grid gap-2">
-          <button class="btn btn-warning" type="submit">Enroll</button>
+          <button class="btn btn-warning" type="submit">Tham gia</button>
         
         </div>
         

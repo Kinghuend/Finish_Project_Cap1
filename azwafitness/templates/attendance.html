@@ -2,7 +2,7 @@
 {% block title %} Attendance {% endblock title%}
 {% block head %}
 
-<h1>Apply Attendance</h1>
+<h1>Đăng ký giờ tập trong ngày</h1>
     
 
 <div class="container mt-2">
@@ -45,22 +45,27 @@
         <div class="form-group">
 
           <select class="form-control mt-2" id="workout" name="workout" required>
-            <option selected>Select Workout</option>
-            <option value="Biceps">Biceps</option>
-            <option value="Triceps">Triceps</option>
-            <option value="Shoulders">Shoulders</option>
-            <option value="Chest">Chest</option>
+            <option selected>Chọn tập luyện</option>
+            <option value="Biceps">Bắp tay</option>
+            <option value="Triceps">Cơ tam đầu</option>
+            <option value="Shoulders">Đôi vai</option>
+            <option value="Chest">Ngực</option>
             <option value="ABS">ABS</option>
-            <option value="Back">Back</option>
-            <option value="Warm Up">Warm Up</option>
-            <option value="Treadmill">Treadmill</option>
+            <option value="Back">Mặt sau</option>
+            <option value="Warm Up">Cơ chân</option>
+            <option value="Abdominal muscles">Cơ bụng</option>
+            <option value="Swimming">Bơi lội</option>
+            <option value="Treadmill">Máy chạy bộ</option>
+            <option value="squat">Squat</option>
+            <option value="lift the weight">nâng tạ</option>Yoga
+            <option value="Yoga">Yoga</option>
           </select>
         </div>
 
        
           
         <div class="form-group">
-            <label for="logintime" class="text-white">Log In</label>
+            <label for="logintime" class="text-white">Bắt đầu</label>
           <input
             type="time"
             class="form-control mt-2"
@@ -72,7 +77,7 @@
         </div>
 
         <div class="form-group">
-            <label for="loginout" class="text-white">Log Out</label>
+            <label for="loginout" class="text-white">Kết thúc</label>
           <input
             type="time"
             class="form-control mt-2"
@@ -87,7 +92,7 @@
         <div class="form-group">
            
                      <select  class="form-control mt-2" id="trainer" name="trainer"  required>
-                     <option selected> Select Trainer </option>
+                     <option selected> Chọn huấn luyện viên </option>
                           {% for  p in SelectTrainer %}
                           
 
@@ -105,7 +110,7 @@
 
         <br />
         <div class="d-grid gap-2">
-          <button class="btn btn-warning" type="submit">Apply Attendance</button>
+          <button class="btn btn-warning" type="submit">Đăng ký</button>
         </div>
       </form>
     </div>
