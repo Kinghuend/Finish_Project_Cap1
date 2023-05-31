@@ -303,7 +303,7 @@ def contact(request):
         desc=request.POST.get('desc')
         myquery=Contact(name=name,email=email,phonenumber=number,description=desc)
         myquery.save()       
-        messages.info(request,"Thanks for Contacting us we will get back you soon")
+        messages.info(request,"Cảm ơn bạn đã liên hệ với chúng tôi, chúng tôi sẽ liên hệ lại với bạn sớm")
         return redirect('/contact')
         
     return render(request,"contact.html")
@@ -432,7 +432,7 @@ def enroll(request):
         address=request.POST.get('address')
         query=Enrollment(FullName=FullName,Email=email,Gender=gender,PhoneNumber=PhoneNumber,DOB=DOB,SelectMembershipplan=member,Address=address)
         query.save()
-        messages.success(request,"Thanks For Enrollment")
+        messages.success(request,"Cảm ơn vì đã đăng ký")
         return redirect('/join')
 
 
